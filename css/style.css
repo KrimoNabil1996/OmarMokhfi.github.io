@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+
+* {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+
+*:hover {
+    outline-style: none;
+    border: none;
+}
+
+body .container-fluid .full {
+    min-height: 100vh;
+}
+
+.color-blue {
+    color: #2F3545;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-grey {
+    color: #BDB7B1;
+}
+
+.color-red {
+    color: #f07b8b;
+}
+
+/* ------------------header------------------ */
+.nav-link {
+    transition: all 1s ease;
+}
+.nav-link:hover {
+    text-decoration: line-through;
+    color: #2F3545;
+}
+
+.navbar-brand:hover {
+    color: #f07b8b;
+}
+
+.navbar-toggler:focus {
+    outline-style: none;
+    border: solid 1px #BDB7B1;
+}
+
+.veux {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px 7px;
+    padding-top: 5px;
+    border: 2px solid #f07b8b;
+    border-radius: 7px;
+    font-size: 0.7em;
+    color: #f07b8b;
+    margin-left: 0;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.veux:hover {
+    background: none;
+    color: #f07b8b;
+}
+
+/* ------------------end header------------------ */
+
+/*------------------footer------------------- */
+
+#footer ul {
+    list-style: none;
+}
+
+#footer button {
+      box-shadow: inset 0 30px 30px -15px rgba(255,255,255,.1), inset 0 0 0 1px rgba(255,255,255,.3), inset 0 1px 20px rgba(0,0,0,0), 0 3px 0 #BDB7B1, 0 3px 2px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.1), 0 10px 20px rgba(0,0,0,.1);
+      color: #BDB7B1;
+    }
+
+.facebook {
+    background: #3b5998;
+    
+}
+
+.youtube {
+    background: #ff0000;
+}
+
+.instagram {
+    background: #405DE6;
+}
+
+.github {
+    background: #333333;
+}
+
+.linkedin {
+    background: #0077B5;
+}
+
+/*------------------end footer------------------- */
+
+/* ------------------Content------------------ */
+
+.left {
+    background-color: #2F3545;
+}
+
+.right {
+    background-color: #BDB7B1;
+}
+
+/* ------------------end Content------------------ */
+
+/* ------------------buttons------------------ */
+
+.button {
+    border: none;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 20px;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    top: 0;
+    transform: translateY(0px);
+    position: relative;
+    transition: 150ms all;
+    -webkit-transition: 150ms all;
+    -moz-transition: 150ms all;
+    -o-transition: 150ms all;
+    -ms-transition: 150ms all;
+  }
+  
+ .button:hover {
+    transform: translateY(3px);
+    box-shadow: inset 0 16px 2px -15px rgba(0,0,0,0), inset 0 0 0 1px rgba(255,255,255,.15), inset 0 1px 20px rgba(0,0,0,.1), 0 0 0 black, 0 0 0 2px rgba(255,255,255,.5), 0 0 0 rgba(0,0,0,0), 0 0 0 rgba(0,0,0,0);
+  }
+
+  .btn1 {
+      background: #f07b8b;
+      color: #2F3545;
+      box-shadow: inset 0 30px 30px -15px rgba(255,255,255,.1), inset 0 0 0 1px rgba(255,255,255,.3), inset 0 1px 20px rgba(0,0,0,0), 0 3px 0 #2F3545, 0 3px 2px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.1), 0 10px 20px rgba(0,0,0,.1);
+  }
+
+  .btn2 {
+    background: #2F3545;
+    color: #f07b8b;
+    box-shadow: inset 0 30px 30px -15px rgba(255,255,255,.1), inset 0 0 0 1px rgba(255,255,255,.3), inset 0 1px 20px rgba(0,0,0,0), 0 3px 0 #f07b8b, 0 3px 2px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.1), 0 10px 20px rgba(0,0,0,.1);
+}
+
+/* ------------------end buttons------------------ */
