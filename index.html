@@ -14,7 +14,8 @@
 
 <body>
     <nav id="header" class="navbar navbar-expand-lg fixed-top pt-4 px-5">
-        <a class="navbar-brand color-grey" href="index.html"><span><b>OM.</b> WD</span><sup><i class="btn ml-2 veux">Looking for
+        <a class="navbar-brand color-grey" href="index.html"><span><b>OM.</b> WD</span><sup><i
+                    class="btn ml-2 veux">Looking for
                     internship</i></sup></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,18 +25,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             </ul>
-            <ul class="navbar-nav mr-4">
-                <li class="nav-item">
-                    <a class="nav-link color-black" href="index.html">Home</a>
+            <ul class="navbar-nav mr-4 controls">
+                <li class="nav-item active" data-target="#carousel1" data-slide-to="0">
+                    <a class="nav-link color-black nav-slide" href="">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link color-black" href="#">About</a>
+                <li class="nav-item" data-target="#carousel1" data-slide-to="1">
+                    <a class="nav-link color-black nav-slide" href="#">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link color-black" href="#">Experience</a>
+                <li class="nav-item active" data-target="#carousel2" data-slide-to="1">
+                    <a class="nav-link color-black" href="#right">Experience</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link color-black" href="#">Contact</a>
+                <li class="nav-item" data-target="#carousel1" data-slide-to="2">
+                    <a class="nav-link color-black nav-slide" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link color-black" href="portfolio.html">Portfolio</a>
@@ -48,12 +49,159 @@
     </nav>
     <div class="container-fluid">
         <div class="row full">
-            <div class="left col-md-5">
+            <section id="left" class="wrapper left col-md-5">
+                <div id="carousel1" class="carousel slide vert">
+                    <div class="carousel-inner inwrap">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/profile.JPG" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="w-100 about" alt="Second slide">
+                                <h3 class="color-red">ABOUT ME</h3>
+                                <p>
 
-            </div>
-            <div class="right col-md-7">
+                                    <span class="color-red">For now it's just me.</span><br>
+                                    <span class="color-grey">I am a fifth year student at the higher school of computer
+                                        science, I am always passionate about
+                                        what I do to the point that I don't believe in vacation because it is a full
+                                        year
+                                        of enjoyable hard work for me. <br>
+                                        I love releasing my inner kid when it comes to creativity and keeping my grown
+                                        up serious coder to turn that creativity into visual art. <br>
+                                    </span>
+                                    <span class="color-red">Give me a job and a cup of coffee and count that job as
+                                        done.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="w-100 about" alt="Third slide">
+                                <h3 class="color-red">CONTACT ME</h3>
+                                <ul class="list-unstyled pl-1">
+                                    <li class="form-inline py-2 my-4">
+                                        <button class="icon-border">
+                                            <i class="fa fa-phone"></i>
+                                        </button>
+                                        <p class="ml-4">
+                                            <span class="color-red">Phone Number</span><br>
+                                            <span class="color-grey">+213 666-23-5548</span>
+                                        </p>
+                                    </li>
+                                    <li class="form-inline py-2 my-4">
+                                        <button class="icon-grey">
+                                            <i class="fa fa-envelope"></i>
+                                        </button>
+                                        <p class="ml-4">
+                                            <span class="color-red">Email Address</span><br>
+                                            <span class="color-grey">o.mokhfi@esi-sba.dz</span>
+                                        </p>
+                                    </li>
+                                    <li class="form-inline py-2 my-4">
+                                        <button class="icon-border">
+                                            <i class="fa fa-map"></i>
+                                        </button>
+                                        <p class="ml-4">
+                                            <span class="color-red">Address</span><br>
+                                            <span class="color-grey">Sidi Bel Abbes, Algeria</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="right" class="wrapper right col-md-7">
+                <div id="carousel2" class="carousel slide">
+                    <div class="carousel-inner inwrap">
+                        <div class="carousel-item active">
+                            <div class="w-100 main px-2" alt="First slide">
+                                <h1 class="h1">
+                                    <span class="color-blue">I</span><span class="color-red">'</span><span
+                                        class="color-blue">M</span><br>
+                                    <span class="color-blue">MOKHFI</span><br>
+                                    <span class="color-blue">OMAR</span><span class="color-red"> .</span>
+                                </h1>
+                                <p class="mb-4">
+                                    <span class="color-red">Web Developer</span><span class="color-blue"> . </span><span
+                                        class="color-red">Designer</span><br>
 
-            </div>
+                                </p>
+                                <form class="form-inline my-2 mt-4 my-lg-0" action="portfolio.html">
+                                    <button class="button btn1 my-2 my-sm-0" onclick="window.open('resume.pdf'); return false;"><b>MY RESUME</b></button>
+                                    <button class="button btn2 mx-2 my-2 my-sm-0" type="submit"><b>MY WORK</b></button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item container">
+                            <div class="row">
+                                    <div class="experience col-md-8" alt="Second slide">
+                                            <h3 class="color-blue">MY EXPERIENCE</h3>
+                                            <ul class="list-unstyled pl-1">
+                                                <li class="form-inline py-2 my-4">
+                                                    <button class="icon-blue">
+                                                        <img src="img/gdg.png" width="50px" height="50px" alt="gdg">
+                                                    </button>
+                                                    <p class="ml-4">
+                                                        <span class="color-blue">GDG Mostaganem</span><br>
+                                                        <span class="color-blue">Community Leader</span><br>
+                                                        <span class="color-red">Mars 2019 - Present</span>
+                                                    </p>
+                                                </li>
+                                                <li class="form-inline py-2 my-4">
+                                                    <button class="icon-red">
+                                                        <img src="img/ingeniums.png" width="50px" height="50px" alt="ingeniums">
+                                                    </button>
+                                                    <p class="ml-4">
+                                                        <span class="color-blue">INGENIUMS Club</span><br>
+                                                        <span class="color-blue">President</span><br>
+                                                        <span class="color-red">September 2018 - July 2019</span>
+                                                    </p>
+                                                </li>
+                                                <li class="form-inline py-2 my-4">
+                                                    <button class="icon-blue">
+                                                        <img src="img/esi.jpg" width="50px" height="50px" alt="esi-sba">
+                                                    </button>
+                                                    <p class="ml-4">
+                                                        <span class="color-blue">ESI-SBA</span><br>
+                                                        <span class="color-blue">Intern</span><br>
+                                                        <span class="color-red">September 2018 - October 2018</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="experience schedule col-md-4" alt="Second slide">
+                                                <h5 class="color-blue">MY SCHEDULE</h5>
+                                            <p>
+                                                <span class="color-blue">08:00</span><br>
+                                                <span class="color-red">Wake-up</span><br>
+                                                <span class="color-blue">08:00 - 10:00</span><br>
+                                                <span class="color-red">Morning routine</span><br>
+                                                <span class="color-blue">10:00 - 11:00</span><br>
+                                                <span class="color-red">Online Course</span><br>
+                                                <span class="color-blue">11:00 - 12:00</span><br>
+                                                <span class="color-red">Emails & blog</span><br>
+                                                <span class="color-blue">12:00 - 13:00</span><br>
+                                                <span class="color-red">lunch & shower</span><br>
+                                                <span class="color-blue">13:00 - 17:00</span><br>
+                                                <span class="color-red">Work</span><br>
+                                                <span class="color-blue">17:00 - 22:00</span><br>
+                                                <span class="color-red">Break</span><br>
+                                                <span class="color-blue">22:00 - 00:00</span><br>
+                                                <span class="color-red">Work</span><br>
+                                                <span class="color-blue">00:00 - 01:00</span><br>
+                                                <span class="color-red">Reading a book</span><br>
+                                                <span class="color-blue">01:00</span><br>
+                                                <span class="color-red">Sleep</span>
+                                            </p>
+                                        </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <footer id="footer" class="container-fluid fixed-bottom">
@@ -61,19 +209,25 @@
             <div class="col-md-5">
                 <ul class="form-inline justify-content-center px-0 py-2">
                     <li class="nav-item">
-                        <button onclick="window.location.href = 'https://www.behance.net/omar_mokhfi';" class="button mx-2 behance"><i class="fa fa-behance"></i></button>
+                        <button onclick="window.location.href = 'https://www.behance.net/omar_mokhfi';"
+                            class="button mx-2 behance"><i class="fa fa-behance"></i></button>
                     </li>
                     <li class="nav-item">
-                        <button onclick="window.location.href = 'https://www.youtube.com/channel/UCgJmMUZhVrJOqvpz6lfVZQQ';" class="button youtube mx-2"><i class="fa fa-youtube-play"></i></button>
+                        <button
+                            onclick="window.location.href = 'https://www.youtube.com/channel/UCgJmMUZhVrJOqvpz6lfVZQQ';"
+                            class="button youtube mx-2"><i class="fa fa-youtube-play"></i></button>
                     </li>
                     <li class="nav-item">
-                        <button onclick="window.location.href = 'https://www.linkedin.com/in/omar-mokhfi/';" class="button linkedin mx-2"><i class="fa fa-linkedin"></i></button>
+                        <button onclick="window.location.href = 'https://www.linkedin.com/in/omar-mokhfi/';"
+                            class="button linkedin mx-2"><i class="fa fa-linkedin"></i></button>
                     </li>
                     <li class="nav-item">
-                        <button onclick="window.location.href = 'https://github.com/OmarMokhfi';" class="button github mx-2"><i class="fa fa-github"></i></button>
+                        <button onclick="window.location.href = 'https://github.com/OmarMokhfi';"
+                            class="button github mx-2"><i class="fa fa-github"></i></button>
                     </li>
                     <li class="nav-item">
-                        <button onclick="window.location.href = 'https://www.instagram.com/omar_mokhfi_/';" class="button instagram mx-2"><i class="fa fa-instagram"></i></button>
+                        <button onclick="window.location.href = 'https://www.instagram.com/omar_mokhfi_/';"
+                            class="button instagram mx-2"><i class="fa fa-instagram"></i></button>
                     </li>
                 </ul>
             </div>
