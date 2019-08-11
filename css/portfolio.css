@@ -1,0 +1,50 @@
+@media (max-width: 767px) { 
+    body {
+      overflow: scroll;
+    }
+  }
+
+  body {
+      overflow: hidden;
+  }
+
+.left {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.right {
+    padding: 150px 100px;
+}
+
+.card-img-overlay {
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .card-img-overlay .card-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .card-img-overlay .btn {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .right .card {
+    overflow: hidden;
+    background-color: #2f3545;
+    width: 300px;
+    height: 300px;
+  }
+  .card .card-img {
+    mix-blend-mode: overlay;
+  }
+
+  .left .card {
+    overflow: hidden;
+    background-color: #2f3545;
+    width: 200px;
+    height: 200px;
+    font-size: 80%;
+  }
