@@ -1,26 +1,36 @@
-@media (max-width: 767px) { 
-    body {
-      overflow: scroll;
-    }
-  }
-
+@media only screen and (min-width: 767px) {
   body {
-      overflow: hidden;
+    overflow: hidden;
   }
-
-.left {
-    padding-top: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
+  .left {
+    padding-top: 120px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+  .right {
+    padding: 150px 100px;
+  }
 }
 
-.right {
-    padding: 150px 100px;
+@media only screen and (max-width: 767px) {
+  body {
+    overflow: scroll;
+  }
+  .left {
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .right {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .card-img-overlay {
     transform: translateY(0);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .card-img-overlay .card-text {
     opacity: 1;
@@ -39,6 +49,11 @@
   }
   .card .card-img {
     mix-blend-mode: overlay;
+  }
+
+  .card img {
+    height: 100%;
+    width: 100%;
   }
 
   .left .card {
